@@ -1,0 +1,35 @@
+programa
+{
+	
+	//Aluno aprovado se a média dele for 7 ou mais
+	//Aluno reprovado se a média for menor que 6
+	inclua biblioteca Matematica
+	
+	funcao inicio()
+	{
+		real nota1, nota2, nota3, resultado
+
+		escreva("Informe a sua primera nota: ")
+		leia(nota1)
+		
+		escreva("Informe a sua segunda nota: ")
+		leia(nota2)
+		
+		escreva("Informe a sua terceira nota: ")
+		leia(nota3)
+		
+          limpa()
+          
+		resultado = (nota1 + nota2 + nota3) / 3
+
+		resultado = Matematica.arredondar (resultado,2)
+		
+		escreva("Nota do aluno: " + resultado)
+
+		se (resultado >=7){
+			escreva("\nAluno aprovado com sucesso!!") 
+		}
+		senao escreva("\nAluno reprovado")
+			
+	}
+}
